@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap');
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    opacity: 80%;
+    background-color: #26715E;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    .main{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+
+            h1{
+                font-family: "Quicksand", sans-serif;
+                font-size: 22px;
+                color: white;
+            }
+        }
+        .info{
+            display: flex;
+            width: 30%;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                font-family: "Quicksand", sans-serif;
+                color: white;
+                &:hover{
+                    text-decoration: underline ;
+                    color: orange;
+                    transition: .3s;
+                }
+            }
+        }
+        .bars{
+            display: none;
+        }
+    }
+    @media screen and (max-width:768px){
+        .main{
+            .info{
+                display: none;
+            }
+            .bars{
+                display: block;
+                color: white;
+            }
+        }
+    }
+}

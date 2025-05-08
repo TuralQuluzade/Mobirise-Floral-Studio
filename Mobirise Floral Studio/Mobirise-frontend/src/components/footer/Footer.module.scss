@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300..700&display=swap');
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #E0ECDC;
+    padding: 2rem 0;
+    font-family: "Quicksand", sans-serif;   
+    .main{
+        width: 65%;
+        display: flex;
+        .input{
+            width: 25%;
+            input{
+                width: 80%;
+                height: 50px;
+                border: none;
+                outline: none;
+                border-radius: 15px 0 0 15px ;
+            }
+            button{
+                width: 20%;
+                height: 50px;
+                border: none;
+                background: none;
+                border: 1px solid white;
+                color: #0C5B47;
+            }
+        }
+        .about{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            text-align: center;
+            color: #0C5B47;
+            a{
+                text-decoration: none;
+                color: #0C5B47
+                
+            };
+        }
+        .contact{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            text-align: center;
+            color: #0C5B47;
+            a{
+                text-decoration: none;
+                color: #0C5B47
+                
+            };
+        }
+
+    }
+    @media screen and (max-width:768px){
+        .main{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            .input{
+                width: 90%;
+            }
+            .contact{
+                width: 90%;
+            }
+            .about{
+                width: 90%;
+            }
+        }
+    }
+}

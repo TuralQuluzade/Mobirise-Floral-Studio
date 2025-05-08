@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300..700&display=swap');
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    background-image: url(https://mobirise.com/extensions/floram4/floral-studio/assets/images/background1-1-1085x595.jpg);
+    .main{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .texts{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            gap: 1rem;
+            font-family: "Quicksand", sans-serif;
+            color: #0C5B47;
+            padding: 2rem 0;
+            h1{
+                font-size: 46px;
+                font-weight: 400;
+            }
+
+        }
+        .datas{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            text-align: center;
+            .data{
+                width: 30%;
+                font-family: "Quicksand", sans-serif;
+                h3{
+                    font-weight: 400;
+                    color: #0C5B47;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            button{
+                width: 40%;
+                height: 40px;
+                border: none;
+                background-color: wheat;
+                color: #0C5B47;
+                font-family: "Quicksand", sans-serif;
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                    color: wheat;
+                    background-color: #0C5B47;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:768px){
+        .main{
+            width: 100%;
+            .datas{
+                flex-direction: column;
+                .data{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

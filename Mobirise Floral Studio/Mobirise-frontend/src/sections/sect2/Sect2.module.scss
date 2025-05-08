@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Quicksand:wght@300..700&display=swap');
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    .main{
+        width: 50%;
+        display: flex;
+        .texts{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem;
+            gap: 1rem;
+            font-family: "Quicksand", sans-serif;
+            background-color: #1B745E;
+            color: white;
+            h1{
+                font-size: 46px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 22px;
+            }
+            button{
+                width: 45%;
+                height: 40px;
+                background-color: #E9EFE5;
+                color: #26715E;
+                border: none;
+                font-family: "Quicksand", sans-serif;
+            }
+            
+        }
+    }
+    @media screen and (max-width:768px){
+        .main{
+            flex-direction: column-reverse;
+            width: 90%;
+            img{
+                width: 100%;
+            }
+            .texts{
+                width: 100%;
+            }
+        }
+    }
+}
